@@ -40,3 +40,41 @@ export const projects = [
     image: "/projects/monibank.png"
   }
 ];
+export const stacksData = [
+  {
+    category: "Frontend",
+    icons: ["logos:html-5", "logos:css-3", "logos:javascript", "logos:react", "logos:nextjs-icon", "logos:tailwindcss-icon", "logos:bootstrap", "logos:material-ui"]
+  },
+  {
+    category: "Backend",
+    icons: ["logos:typescript-icon", "logos:nodejs-icon", "logos:python", "logos:nestjs"]
+  },
+  {
+    category: "APIs",
+    icons: ["logos:graphql"]
+  },
+  {
+    category: "Banco de Dados",
+    icons: ["logos:postgresql", "logos:mongodb-icon", "logos:redis", "logos:postgis"]
+  },
+  {
+    category: "ORM",
+    icons: ["simple-icons:prisma", "logos:sequelize"]
+  },
+  {
+    category: "Sistema Operacional",
+    icons: ["logos:linux-tux", "logos:ubuntu"]
+  },
+  {
+    category: "Geotecnologias",
+    icons: ["simple-icons:qgis", "mdi:layers-triple"]
+  },
+  {
+    category: "Inteligência Artificial",
+    icons: ["simple-icons:openai", "logos:google-gemini", "logos:claude-icon"] 
+  },
+  {
+    category: "Outros apps",
+    icons: ["logos:postman-icon", "logos:figma", "logos:visual-studio-code"]
+  }
+];

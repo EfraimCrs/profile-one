@@ -7,6 +7,7 @@ import { Icon } from '@iconify/react';
 import TabNav from "@/app/components/TabNav";
 import ProjectsTab from "@/app/components/Tabs/ProjectsTab";
 import ProjectModal from "@/app/components/ProjectModal";
+import StacksTab from "@/app/components/Tabs/StacksTab";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('projects');
@@ -85,7 +86,7 @@ export default function Home() {
             <ProjectsTab onOpenProject={setSelectedProjectId} />
           )}
           {activeTab === 'stacks' && (
-            <div className="text-center text-gray-500 mt-10">Conteúdo das Stacks virá aqui...</div>
+            <StacksTab />
           )}
           {/* ... resto das abas */}
         </div>
