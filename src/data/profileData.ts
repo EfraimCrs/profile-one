@@ -2,6 +2,7 @@
 export const profileInfo = {
   name: "Efraim Crs",
   fullName: "Efraim da Conceição Rodrigues Silva",
+  avatarUrl: "/myperfil.png",
   role: "ADS | Desenvolvedor Web | Estudante de Geotecnologias",
   location: "São Luís, Maranhão, Brasil",
   stats: {
@@ -78,3 +79,63 @@ export const stacksData = [
     icons: ["logos:postman-icon", "logos:figma", "logos:visual-studio-code"]
   }
 ];
+  export const educationData = [
+  {
+    institution: "UNIASSELVI",
+    course: "Análise e Desenvolvimento de Sistemas",
+    period: "nov de 2024 - fev de 2027",
+    icon: "mdi:school"
+  }
+];
+
+export const certificatesData = [
+  {
+    id: "figma-design",
+    title: "Figma: design de interfaces para web e mobile",
+    image: "/certificates/cert-figma.png"
+  },
+  {
+    id: "desenvolvimento-front-end",
+    title: "Desenvolvimento Front-end: cursos para criar aplicações web com HTML, CSS e JavaScript",
+    image: "/certificates/cert-frontend.png"
+  },
+  {
+    id: "css-avancado",
+    title: "CSS avançado: implementando designs com Grid, Flexbox e Sass",
+    image: "/certificates/cert-css.png"
+  },
+  {
+    id: "javascript-completo",
+    title: "Desenvolva aplicações Web com JavaScript",
+    image: "/certificates/cert-javascript.png"
+  },
+  {
+    id: "javascript-web",
+    title: "Desenvolva aplicações Web em JavaScript com tarefas concorrentes e orientadas a objetos",
+    image: "/certificates/cert-javascript-web.png"
+  },
+  {
+    id: "fullstack-javascript",
+    title: "Full stack JavaScript: crie um projeto com React e Node.js",
+    image: "/certificates/cert-fullstack.png"
+  },
+  {
+    id: "bootstrap-5",
+    title: "Bootstrap 5: desenvolvimento de websites responsivos e atrativos",
+    image: "/certificates/cert-bootstrap.png"
+  },
+  {
+    id: "autenticacao-testes-seguranca-nodejs",
+    title: "Autenticação, testes e segurança em Node.js",
+    image: "/certificates/cert-nodejs.png"
+  },
+  {
+    id: "apis-nodejs-express",
+    title: "APIs com Node.js e Express",
+    image: "/certificates/cert-apis.png"
+  },
+];
+export const contactData = {
+  email: "efraimcrsdev@gmail.com",
+  lattesUrl: "https://lattes.cnpq.br/7094421619684005"
+};

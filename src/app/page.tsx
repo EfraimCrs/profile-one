@@ -1,4 +1,4 @@
-// src/app/page.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -8,6 +8,9 @@ import TabNav from "@/app/components/TabNav";
 import ProjectsTab from "@/app/components/Tabs/ProjectsTab";
 import ProjectModal from "@/app/components/ProjectModal";
 import StacksTab from "@/app/components/Tabs/StacksTab";
+import Image from "next/image";
+import EducationTab from "@/app/components/Tabs/EducationTab";
+import ProfileTab from "@/app/components/Tabs/ProfileTab";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('projects');
@@ -23,7 +26,15 @@ export default function Home() {
         {/* CABEÇALHO - VERSÃO MOBILE (Mantido o mesmo) */}
         <div className="md:hidden w-full flex flex-col items-start text-left mb-6">
           <div className="flex flex-row items-center gap-4 w-full mb-4">
-            <div className="w-20 h-20 rounded-full bg-gray-700 flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden"></div>
+            <div className="w-20 h-20 rounded-full flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden relative">
+              <Image 
+                src={profileInfo.avatarUrl} 
+                alt={`Foto de perfil de ${profileInfo.name}`}
+                fill // O Image preenche o container pai
+                className="object-cover" // Garante que a foto preencha o círculo sem distorcer
+                priority // Carrega esta imagem com prioridade (importante para o topo da página)
+              />
+            </div>
             <div className="flex flex-col items-start">
               <h1 className="text-xl font-bold text-white mb-0.5">{profileInfo.name}</h1>
               <h2 className="text-[11px] text-gray-400 mb-1.5">{profileInfo.fullName}</h2>
@@ -46,7 +57,15 @@ export default function Home() {
 
         {/* CABEÇALHO - VERSÃO PC (Mantido o mesmo) */}
         <div className="hidden md:flex flex-row items-center justify-center gap-8 w-full mb-12">
-          <div className="w-32 h-32 rounded-full bg-gray-700 flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden"></div>
+          <div className="w-32 h-32 rounded-full flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden relative">
+            <Image 
+              src={profileInfo.avatarUrl} 
+              alt={`Foto de perfil de ${profileInfo.name}`}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <div className="flex flex-col items-start text-left">
             <h1 className="text-3xl font-bold text-white mb-1">{profileInfo.name}</h1>
             <h2 className="text-sm text-gray-400 mb-3">{profileInfo.fullName}</h2>
@@ -88,7 +107,12 @@ export default function Home() {
           {activeTab === 'stacks' && (
             <StacksTab />
           )}
-          {/* ... resto das abas */}
+          {activeTab === 'education' && (
+            <EducationTab />
+          )}
+          {activeTab === 'profile' && (
+            <ProfileTab />
+          )}
         </div>
       </div>
 
