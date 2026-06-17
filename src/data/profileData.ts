@@ -3,13 +3,13 @@ export const profileInfo = {
   name: "Efraim Crs",
   fullName: "Efraim da Conceição Rodrigues Silva",
   avatarUrl: "/myperfil.png",
-  role: "ADS | Desenvolvedor Web | Estudante de Geotecnologias",
+  role: "ADS | Desenvolvedor Web | Geotecnologias",
   location: "São Luís, Maranhão, Brasil",
   stats: {
     posts: 3,
     repositories: 40,
   },
-  about: "Olá meu nome é Efraim, atualmente atuando como Web Developer & QA. Cursando Análise e Desenvolvimento de Sistemas (ADS), e aprimorando meus conhecimentos através de cursos complementares na Alura."
+  about: "Estudante de Análise e Desenvolvimento de Sistemas (ADS), com conclusão prevista para 2026. Possuo experiência em desenvolvimento web utilizando Node.js, Express.js, Next.js, React, PostgreSQL e Prisma ORM. Utilizo Linux (Ubuntu) como ambiente principal de desenvolvimento e tenho interesse em arquitetura de software, boas práticas e escalabilidade de sistemas. Atualmente, também direciono meus estudos para Geotecnologias, com foco em SIG, Geoprocessamento e WebGIS, utilizando QGIS para análises espaciais e desenvolvimento de soluções geográficas."
 };
 
 export const projects = [
@@ -27,7 +27,7 @@ export const projects = [
     title: "CV-ULTRA",
     description: "Este é o seu ULTRA-PERFIL. Deixe o Word no passado. Construa currículos de alta performance com tecnologia ATS e design de elite, diretamente do seu navegador.",
     stacks: ["logos:react", "logos:nextjs-icon", "logos:typescript-icon"],
-    githubUrl: "https://github.com/EfraimCrs/cv-saas",
+    githubUrl: "https://github.com/EfraimCrs/cv-ultra",
     liveUrl: "#",
     image: "/projects/cvultra.png"
   },
@@ -36,10 +36,28 @@ export const projects = [
     title: "MoniBank",
     description: "Landing page responsiva desenvolvida com HTML, CSS e JavaScript para divulgação de serviços financeiros e investimentos.",
     stacks: ["logos:html-5", "logos:css-3", "logos:javascript"],
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/EfraimCrs/monibank",
+    liveUrl: "https://efraimcrs.github.io/monibank/",
     image: "/projects/monibank.png"
-  }
+  },
+  {
+    id: "bytebank",
+    title: "ByteBank",
+    description: "Aplicação web inspirada em um banco digital, desenvolvida com HTML, CSS e JavaScript. O projeto apresenta uma interface moderna e responsiva, simulando funcionalidades bancárias e proporcionando uma experiência intuitiva para o usuário.",
+    stacks: ["logos:html-5", "logos:css-3", "logos:javascript"],
+    githubUrl: "https://github.com/EfraimCrs/byte-bank",
+    liveUrl: "https://efraimcrs.github.io/byte-bank/",
+    image: "/projects/bytebank.png"
+  },
+  {
+  id: "glassmorphism-login",
+  title: "Glassmorphism Login",
+  description: "Tela de login moderna desenvolvida com HTML e CSS, utilizando o efeito Glassmorphism para criar uma interface elegante e responsiva. O projeto conta com campos de autenticação, recuperação de senha e opção de login com Google, explorando transparência, desfoque e boas práticas de design UI.",
+  stacks: ["logos:html-5", "logos:css-3"],
+  githubUrl: "https://github.com/EfraimCrs/pro-Login",
+  liveUrl: "#",
+  image: "/projects/image.png"
+}
 ];
 export const stacksData = [
   {
