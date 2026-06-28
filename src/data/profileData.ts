@@ -6,7 +6,7 @@ export const profileInfo = {
   role: "ADS | Desenvolvedor Web | Geotecnologias",
   location: "São Luís, Maranhão, Brasil",
   stats: {
-    posts: 3,
+    posts: 5,
     repositories: 40,
   },
   about: "Estudante de Análise e Desenvolvimento de Sistemas (ADS), com conclusão prevista para 2026. Possuo experiência em desenvolvimento web utilizando Node.js, Express.js, Next.js, React, PostgreSQL e Prisma ORM. Utilizo Linux (Ubuntu) como ambiente principal de desenvolvimento e tenho interesse em arquitetura de software, boas práticas e escalabilidade de sistemas. Atualmente, também direciono meus estudos para Geotecnologias, com foco em SIG, Geoprocessamento e WebGIS, utilizando QGIS para análises espaciais e desenvolvimento de soluções geográficas."
