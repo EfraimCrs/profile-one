@@ -11,6 +11,7 @@ import StacksTab from "@/app/components/Tabs/StacksTab";
 import Image from "next/image";
 import EducationTab from "@/app/components/Tabs/EducationTab";
 import ProfileTab from "@/app/components/Tabs/ProfileTab";
+import AestheticCarousel from "@/app/components/AestheticCarousel";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('projects');
@@ -91,6 +92,9 @@ export default function Home() {
               {profileInfo.about}
             </p>
           </div>
+          {/* --- O CARROSSEL ENTRA EXATAMENTE AQUI --- */}
+          <AestheticCarousel />
+          {/* --------------------------------------- */}
         </div>
 
         {/* NAVEGAÇÃO DAS ABAS (Mantido a mesma) */}
