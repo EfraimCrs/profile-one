@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -12,6 +11,7 @@ import Image from "next/image";
 import EducationTab from "@/app/components/Tabs/EducationTab";
 import ProfileTab from "@/app/components/Tabs/ProfileTab";
 import AestheticCarousel from "@/app/components/AestheticCarousel";
+import GeoCarousel from "@/app/components/GeoCarousel";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('projects');
@@ -24,16 +24,16 @@ export default function Home() {
       
       <div className="w-full max-w-3xl flex flex-col items-start md:items-center relative">
         
-        {/* CABEÇALHO - VERSÃO MOBILE (Mantido o mesmo) */}
+        {/* CABEÇALHO - VERSÃO MOBILE */}
         <div className="md:hidden w-full flex flex-col items-start text-left mb-6">
           <div className="flex flex-row items-center gap-4 w-full mb-4">
             <div className="w-20 h-20 rounded-full flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden relative">
               <Image 
                 src={profileInfo.avatarUrl} 
                 alt={`Foto de perfil de ${profileInfo.name}`}
-                fill // O Image preenche o container pai
-                className="object-cover" // Garante que a foto preencha o círculo sem distorcer
-                priority // Carrega esta imagem com prioridade (importante para o topo da página)
+                fill 
+                className="object-cover" 
+                priority 
               />
             </div>
             <div className="flex flex-col items-start">
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CABEÇALHO - VERSÃO PC (Mantido o mesmo) */}
+        {/* CABEÇALHO - VERSÃO PC */}
         <div className="hidden md:flex flex-row items-center justify-center gap-8 w-full mb-12">
           <div className="w-32 h-32 rounded-full flex-shrink-0 border-2 border-gray-600 shadow-xl overflow-hidden relative">
             <Image 
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* SEÇÃO SOBRE (Mantido a mesma) */}
+        {/* SEÇÃO SOBRE */}
         <div className="w-full mb-8 flex flex-col md:items-center text-left">
           <div className="md:max-w-2xl w-full">
             <h3 className="text-base md:text-xl font-bold text-white mb-2 md:mb-3">Sobre</h3>
@@ -92,22 +92,36 @@ export default function Home() {
               {profileInfo.about}
             </p>
           </div>
-          {/* --- O CARROSSEL ENTRA EXATAMENTE AQUI --- */}
+          
+          {/* O CARROSSEL ESTÉTICO 3D */}
           <AestheticCarousel />
-          {/* --------------------------------------- */}
         </div>
 
-        {/* NAVEGAÇÃO DAS ABAS (Mantido a mesma) */}
+        {/* NAVEGAÇÃO DAS ABAS */}
         <div className="w-full md:max-w-2xl">
           <TabNav activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
 
         {/* ÁREA DE CONTEÚDO DAS ABAS */}
         <div className="w-full md:max-w-2xl min-h-[300px]">
+          
+          {/* CONTEÚDO DA ABA DE PROJETOS */}
           {activeTab === 'projects' && (
-            // ATUALIZADO: Passamos a função setSelectedProjectId para abrir o modal
-            <ProjectsTab onOpenProject={setSelectedProjectId} />
+            <div className="flex flex-col w-full">
+              {/* Projetos de Software (Grid) */}
+              <ProjectsTab onOpenProject={setSelectedProjectId} />
+              
+              {/* Seção de Geotecnologias (Carrossel) */}
+              <div className="mt-12 md:mt-16 w-full text-left">
+                <h2 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-2">
+                  <Icon icon="simple-icons:osgeo" className="w-8 h-8 text-white" />
+                  Geotecnologias
+                </h2>
+                <GeoCarousel />
+              </div>
+            </div>
           )}
+
           {activeTab === 'stacks' && (
             <StacksTab />
           )}
@@ -121,11 +135,11 @@ export default function Home() {
       </div>
 
       {/* ============================== */}
-      {/* COMPONENTE DO MODAL (No final) */}
+      {/* COMPONENTE DO MODAL */}
       {/* ============================== */}
       <ProjectModal 
         projectId={selectedProjectId} 
-        onClose={() => setSelectedProjectId(null)} // Função para fechar (volta o ID para null)
+        onClose={() => setSelectedProjectId(null)}
       />
 
     </main>
