@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           
           {/* O CARROSSEL ESTÉTICO 3D */}
-          <AestheticCarousel />
+          {/*<AestheticCarousel />*/}
         </div>
 
         {/* NAVEGAÇÃO DAS ABAS */}
