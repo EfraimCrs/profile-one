@@ -3,13 +3,13 @@ export const profileInfo = {
   name: "Efraim Crs",
   fullName: "Efraim da Conceição Rodrigues Silva",
   avatarUrl: "/myperfil.png",
-  role: "ADS | Desenvolvedor Web | Geotecnologias",
+  role: "ADS | Desenvolvedor Web Full-Stack | QA",
   location: "São Luís, Maranhão, Brasil",
   stats: {
     posts: 5,
     repositories: 40,
   },
-  about: "Estudante de Análise e Desenvolvimento de Sistemas (ADS), com conclusão prevista para 2026. Possuo experiência em desenvolvimento web utilizando Node.js, Express.js, Next.js, React, PostgreSQL e Prisma ORM. Utilizo Linux (Ubuntu) como ambiente principal de desenvolvimento e tenho interesse em arquitetura de software, boas práticas e escalabilidade de sistemas. Atualmente, também direciono meus estudos para Geotecnologias, com foco em SIG, Geoprocessamento e WebGIS, utilizando QGIS para análises espaciais e desenvolvimento de soluções geográficas."
+  about: "Estudante de Análise e Desenvolvimento de Sistemas (ADS) com previsão de conclusão em 2026. Atua como Desenvolvedor Web Full-Stack com foco na construção de aplicações modernas, desacopladas e escaláveis. Possui experiência prática no desenvolvimento de soluções integradas, atuando tanto na interface do usuário quanto na estruturação do back-end.Paralelamente, dedica-se à área de Quality Assurance (QA), buscando aprimorar a garantia de qualidade de software por meio de testes, validações e boas práticas para assegurar a confiabilidade, segurança e o bom desempenho das aplicações."
 };
 
 export const projects = [

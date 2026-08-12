@@ -10,8 +10,6 @@ import StacksTab from "@/app/components/Tabs/StacksTab";
 import Image from "next/image";
 import EducationTab from "@/app/components/Tabs/EducationTab";
 import ProfileTab from "@/app/components/Tabs/ProfileTab";
-import AestheticCarousel from "@/app/components/AestheticCarousel";
-import GeoCarousel from "@/app/components/GeoCarousel";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('projects');
@@ -110,15 +108,6 @@ export default function Home() {
             <div className="flex flex-col w-full">
               {/* Projetos de Software (Grid) */}
               <ProjectsTab onOpenProject={setSelectedProjectId} />
-              
-              {/* Seção de Geotecnologias (Carrossel) */}
-              <div className="mt-12 md:mt-16 w-full text-left">
-                <h2 className="text-lg md:text-xl font-bold text-white flex items-center gap-2 mb-2">
-                  <Icon icon="simple-icons:osgeo" className="w-8 h-8 text-white" />
-                  Geotecnologias
-                </h2>
-                <GeoCarousel />
-              </div>
             </div>
           )}
 
