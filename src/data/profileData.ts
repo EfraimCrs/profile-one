@@ -3,16 +3,31 @@ export const profileInfo = {
   name: "Efraim Crs",
   fullName: "Efraim da Conceição Rodrigues Silva",
   avatarUrl: "/myperfil.png",
-  role: "ADS | Desenvolvedor Web Full-Stack | QA",
+  role: "Analista | Desenvolvedor | QA",
   location: "São Luís, Maranhão, Brasil",
   stats: {
-    posts: 5,
+    posts: 6,
     repositories: 40,
   },
   about: "Estudante de Análise e Desenvolvimento de Sistemas (ADS) com previsão de conclusão em 2026. Atua como Desenvolvedor Web Full-Stack com foco na construção de aplicações modernas, desacopladas e escaláveis. Possui experiência prática no desenvolvimento de soluções integradas, atuando tanto na interface do usuário quanto na estruturação do back-end.Paralelamente, dedica-se à área de Quality Assurance (QA), buscando aprimorar a garantia de qualidade de software por meio de testes, validações e boas práticas para assegurar a confiabilidade, segurança e o bom desempenho das aplicações."
 };
 
 export const projects = [
+  {
+    id: "luanapraseres",
+    title: "Portfólio Luana Praseres - Engenharia Ambiental",
+    description: "Landing page profissional desenvolvida para serviços de consultoria e gestão ambiental. A interface apresenta um design moderno com foco em conversão (integração direta com WhatsApp), utilizando técnicas avançadas de responsividade fluida, efeitos de glassmorphism, menu com scroll-spy e um carrossel interativo para a vitrine de serviços.",
+    stacks: [
+      "logos:nextjs-icon", 
+      "logos:react", 
+      "logos:typescript-icon", 
+      "logos:tailwindcss-icon", 
+      "logos:figma"
+    ],
+    githubUrl: "#",
+    liveUrl: "https://luanapraseres.vercel.app",
+    image: "/projects/luanapraseres.png"
+  },
   {
     id: "orcamento-app",
     title: "Gere PDFs em vez de em Word",
