@@ -116,7 +116,7 @@ export const stacksData = [
   {
     institution: "UNIASSELVI",
     course: "Análise e Desenvolvimento de Sistemas",
-    period: "nov de 2024 - fev de 2027",
+    period: "nov de 2024 - dez de 2026",
     icon: "mdi:school"
   }
 ];
@@ -171,4 +171,4 @@ export const certificatesData = [
 export const contactData = {
   email: "efraimcrsdev@gmail.com",
   lattesUrl: "https://lattes.cnpq.br/7094421619684005"
-};
+}; 
